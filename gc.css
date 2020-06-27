@@ -1,0 +1,126 @@
+html, body
+{
+	margin: 0;
+	padding: 0;
+}
+
+body 
+{
+  font-family: Calibri, Helvetica, Arial, Verdana, Sans-serif;
+  font-size: large;
+}
+
+img
+{
+  border-style: none;
+  margin: 0 0 0 0;
+  padding: 0 0 0 0;
+}
+
+#header a:focus {
+outline: 0;
+}
+
+#header 
+{
+  background: linear-gradient(45deg, #ec2000, #601000);
+  width: 100%;
+  padding-bottom: 5px;
+}
+
+#logoLink
+{
+  display: block;
+  height: 130px;
+}
+
+#logo
+{
+  float: left;
+  display: block;
+  position: relative;
+  width: 634px;
+  height: 130px;
+  background: url("images/logo.png") no-repeat 0 0;
+  padding-bottom: 5px;
+}
+
+#menu
+{
+  overflow: auto;
+  width: 100%;
+}
+
+.menuButtonContainer
+{
+  float: left;
+  display: block;
+  position: relative;
+  width: 155px;
+  height: 37px;
+}
+
+.menuButtonImage
+{
+  float: left;
+  display: block;
+  position: relative;
+  width: 155px;
+  height: 37px;
+  background: url("images/button.png") no-repeat 0 0;
+}
+
+.menuButtonImage:hover
+{
+  background: url("images/button_on.png") no-repeat 0 0;
+}
+
+.menuButtonText
+{
+  position: absolute;
+  display: block;
+  width: 155px;
+  height: 37px;
+}
+
+#servicesText
+{
+  background: url("images/services.png") no-repeat 0 0;
+}
+
+#aboutText
+{
+  background: url("images/about.png") no-repeat 0 0;
+}
+
+#contactText
+{
+  background: url("images/contact.png") no-repeat 0 0;
+}
+
+#motto
+{
+  float: right;
+  margin-right: 2em;
+  display: block;
+  position: relative;
+  width: 333px;
+  height: 37px;
+  background: url("images/motto.png") no-repeat 0 0;
+}
+
+#content
+{
+  margin-top: 3em;
+  margin-left: 15%;
+  margin-right: 10%;
+}
+
+#footer 
+{
+  text-align: center;
+  margin-top: 5em;
+  margin-bottom: 2em;
+  color: #888888;
+  font-size: small;
+}
