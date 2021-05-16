@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <title>Car ideas</title>
+    <style>
+      body {
+        margin: 0px;
+        background-color: #1a1a1a;
+        font-family: Helvetica;
+      }
+      .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+      }
+      .car {
+        position: relative;
+        grid-row-start: auto;
+        grid-column-start: auto;
+      }
+      .car img {
+        margin: 0px;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+      .car h1 {
+        margin: 0px;
+        position: absolute;
+        left: 16px;
+        bottom: 4px;
+        color: white;
+        opacity: 75%;
+        font-size: 20px;
+        font-weight: 800;
+        -webkit-text-stroke: 1px black;
+      }
+      .image-licence {
+        margin: 0px;
+        position: absolute;
+        right: 20px;
+        bottom: 12px;
+        width: 16px;
+        height: 16px;
+        text-align: center;
+        line-height: 16px;
+        border-radius: 8px;
+        display: block;
+        background-color: rgba(0, 0, 0, 0.5);
+        font-family: serif;
+        font-weight: 800;
+        font-style: italic;
+        font-size: 12px;
+      }
+      .image-licence a {
+        color: #ccc;
+        text-decoration: inherit;
+      }
+      .frame-shade-left {
+        position: absolute;
+        width: 25%;
+        height: 100%;
+        top: 0px;
+        background-image: linear-gradient(to right, rgba(0,0,0,0.5), rgba(0,0,0,0));
+      }
+      .frame-shade-bottom {
+        position: absolute;
+        width: 100%;
+        height: 10%;
+        bottom: 0px;
+        background-image: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="car">
+        <img src="ferrari_456_1.jpg" alt="Ferrari 456">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>Ferrari 456M GT</h1>
+        <p class="image-licence"><a href="https://www.flickr.com/photos/58441544@N00/27113724462/">i</a></p>
+      </div>
+      <div class="car">
+        <img src="lotus_evora_1.jpg" alt="Lotus Evora">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>Lotus Evora S</h1>
+        <p class="image-licence"><a href="https://www.flickr.com/photos/harry_nl/14743944453">i</a></p>
+      </div>
+      <div class="car">
+        <img src="aston_martin_vantage_1.jpg" alt="Aston Martin Vantage">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>Aston Martin V8 Vantage S</h1>
+        <p class="image-licence"><a href="https://www.flickr.com/photos/usinside/5512860754/">i</a></p>
+      </div>
+      <div class="car">
+        <img src="nissan_gtr_1.jpg" alt="Nissan GT-R">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>Nissan GT-R</h1>
+        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Nissan_GTR.jpg">i</a></p>
+      </div>
+      <div class="car">
+        <img src="bmw_i8_1.jpg" alt="BMW i8">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>BMW i8</h1>
+        <p class="image-licence"><a href="https://www.flickr.com/photos/artvlive/47659077282">i</a></p>
+      </div>
+      <div class="car">
+        <img src="nissan_370z_1.jpg" alt="Nissan 370Z">
+        <div class="frame-shade-left"></div>
+        <div class="frame-shade-bottom"></div>
+        <h1>Nissan 370Z</h1>
+        <p class="image-licence"><a href=https://commons.wikimedia.org/wiki/File:Nissan_370Z_Z34_Coupe_Pack_Automatik_2013_Magma_Red_Heckansicht_seitlich_Flugplatz_Werneuchen.jpg">i</a></p>
+      </div>
+    </div>
+  </body>
+</html>
