@@ -14,18 +14,6 @@
         grid-template-columns: 1fr; /* small screens by design */
         grid-template-rows: auto;
       }
-      @media screen and (min-device-width: 480px) {
-        /* Responsive layout for larger screens, e.g. iPad, small desktop */
-        main {
-          grid-template-columns: 1fr 1fr;
-        }
-      }
-      @media screen and (min-width: 1600px) {
-        /* Responsive layout for largest screens, e.g. large desktop */
-        main {
-          grid-template-columns: 1fr 1fr 1fr;
-        }
-      }
       figure {
         position: relative;
         grid-row-start: auto;
@@ -45,7 +33,7 @@
         bottom: 4px;
         color: white;
         opacity: 75%;
-        font-size: 20px;
+        font-size: 3em;
         font-weight: 800;
         -webkit-text-stroke: 1px black;
       }
@@ -54,17 +42,17 @@
         position: absolute;
         right: 20px;
         bottom: 12px;
-        width: 16px;
-        height: 16px;
+        width: 48px;
+        height: 48px;
         text-align: center;
-        line-height: 16px;
-        border-radius: 8px;
+        line-height: 48px;
+        border-radius: 24px;
         display: block;
         background-color: rgba(0, 0, 0, 0.5);
         font-family: serif;
         font-weight: 800;
         font-style: italic;
-        font-size: 12px;
+        font-size: 36px;
       }
       .image-licence a {
         color: #ccc;
@@ -83,6 +71,40 @@
         height: 10%;
         bottom: 0px;
         background-image: linear-gradient(to top, rgba(0,0,0,0.75), rgba(0,0,0,0));
+      }
+
+      @media screen and (min-device-width: 480px) {
+        /* Responsive layout for larger screens, e.g. iPad, small desktop */
+        main {
+          grid-template-columns: 1fr 1fr;
+        }
+        figcaption {
+          font-size: 1.5em;
+        }
+        .image-licence {
+          width: 32px;
+          height: 32px;
+          line-height: 32px;
+          font-size: 24px;
+          border-radius: 32px;
+        }
+      }
+
+      @media screen and (min-width: 1600px) {
+        /* Responsive layout for largest screens, e.g. large desktop */
+        main {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
+        figcaption {
+          font-size: 1.5em;
+        }
+        .image-licence {
+          width: 16px;
+          height: 16px;
+          line-height: 16px;
+          font-size: 12px;
+          border-radius: 8px;
+        }
       }
     </style>
   </head>
