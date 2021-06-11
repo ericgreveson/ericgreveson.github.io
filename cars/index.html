@@ -109,70 +109,16 @@
     </style>
   </head>
   <body>
-    <main>
-      <figure>
-        <img src="ferrari_456_1.jpg" alt="Ferrari 456">
+    <main id="app">
+      <figure v-for="car in cars">
+        <img :src="car.image" :alt="car.name">
         <div class="frame-shade-left"></div>
         <div class="frame-shade-bottom"></div>
-        <figcaption>Ferrari 456M GT</figcaption>
-        <p class="image-licence"><a href="https://www.flickr.com/photos/58441544@N00/27113724462/">i</a></p>
-      </figure>
-      <figure>
-        <img src="lotus_evora_1.jpg" alt="Lotus Evora">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Lotus Evora S</figcaption>
-        <p class="image-licence"><a href="https://www.flickr.com/photos/harry_nl/14743944453">i</a></p>
-      </figure>
-      <figure>
-        <img src="aston_martin_vantage_1.jpg" alt="Aston Martin Vantage">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Aston Martin V8 Vantage S</figcaption>
-        <p class="image-licence"><a href="https://www.flickr.com/photos/usinside/5512860754/">i</a></p>
-      </figure>
-      <figure>
-        <img src="nissan_gtr_1.jpg" alt="Nissan GT-R">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Nissan GT-R</figcaption>
-        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Nissan_GTR.jpg">i</a></p>
-      </figure>
-      <figure>
-        <img src="bmw_i8_1.jpg" alt="BMW i8">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>BMW i8</figcaption>
-        <p class="image-licence"><a href="https://www.flickr.com/photos/artvlive/47659077282">i</a></p>
-      </figure>
-      <figure>
-        <img src="nissan_370z_1.jpg" alt="Nissan 370Z">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Nissan 370Z</figcaption>
-        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Nissan_370Z_Z34_Coupe_Pack_Automatik_2013_Magma_Red_Heckansicht_seitlich_Flugplatz_Werneuchen.jpg">i</a></p>
-      </figure>
-      <figure>
-        <img src="caterham_r300_1.jpg" alt="Caterham R300">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Caterham R300</figcaption>
-        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Caterham_R300.jpg">i</a></p>
-      </figure>
-      <figure>
-        <img src="porsche_boxster_1.jpg" alt="Porsche Boxster (981)">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Porsche Boxster (981)</figcaption>
-        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Porsche_Boxster_-_Type_981_-_China_2015-04-13.jpg">i</a></p>
-      </figure>
-      <figure>
-        <img src="alpine_a110_1.jpg" alt="Alpine A110">
-        <div class="frame-shade-left"></div>
-        <div class="frame-shade-bottom"></div>
-        <figcaption>Alpine A110</figcaption>
-        <p class="image-licence"><a href="https://commons.wikimedia.org/wiki/File:Festival_automobile_international_2018_-_Alpine_A110_-_004.jpg">i</a></p>
+        <figcaption>{{ car.name }}</figcaption>
+        <p class="image-licence"><a :href="car.link">i</a></p>
       </figure>
     </main>
+    <script src="vue.min.js"></script>
+    <script src="cars.js"></script>
   </body>
 </html>
