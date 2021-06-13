@@ -57,6 +57,11 @@ var app = new Vue({
         image: "ariel_atom_1.jpg",
         link: "https://commons.wikimedia.org/wiki/File:ArielAtomGoodwood.jpg"
       },
+      {
+        name: "Toyota GR Supra",
+        image: "toyota_gr_supra_1.jpg",
+        link: "https://commons.wikimedia.org/wiki/File:Toyota_Supra_GR_Genf_2019_1Y7A5650.jpg"
+      },
     ]
   }
 });
